@@ -1,6 +1,6 @@
 /*Common Style*/
 *{margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
-body{background-image: url(imgs/bkg1.jpg) !important; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; font-family: sans-serif;}
+body{background-image: url(imgs/bkg1.jpg) !important; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; font-family: sans-serif;}
 
 /*Layout Style*/
 header{width: 20%; height: 100%; position: fixed; left: 0px; top: 0px; background: rgba(0,0,0,1); padding: 10px; z-index: 2;}
@@ -70,7 +70,7 @@ a{text-decoration: none;}
 .over-all{overflow: auto;}
 
 /*Layouts*/
-.art{width: 35%; background: rgba(0,0,0,0.3); margin: 5px auto; padding: 8px; font-weight: 600;}
+.art{width: 60%; background: rgba(0,0,0,0.3); margin: 10px auto; padding: 18px; font-weight: 600;}
 
 /*Flexbox*/
 .flex{display: flex; flex-wrap: wrap; flex-direction: row}
