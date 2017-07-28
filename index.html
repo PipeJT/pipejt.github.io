@@ -4,27 +4,54 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Portafolio</title>
+        <link rel="stylesheet" href="content/main.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </head>
-    <body>
-        <header>
-            HEADER
-            <div class="logo"></div>
+    <body class="">
+        <header class="txt-white shadows flex flex-justspcbet flex-dircol">
+            <div class="logo txtcenter">
+                <p>Atalapastruka</p>
+            </div>
             <div class="navegador hide">
-                <nav class="navigation">
-                    <ul class="navlist">
+                <nav class="navigation" id="menu">
+                    <ul class="navlist txtcenter">
                         <li class="navitem">
-                            <a href="#" class="navlnk">ITEM 1</a>
+                            <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                            <ul class="navlist txtcenter">
+                                <li class="navitem">
+                                    <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                                </li>
+                                <li class="navitem">
+                                    <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                                    <ul class="navlist txtcenter">
+                                        <li class="navitem">
+                                            <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                                        </li>
+                                        <li class="navitem">
+                                            <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
+            <div><br>
+            <br>
+            <br></div>
         </header>
         <section>
-            SECTION
-            <iframe src="https://pipejt.github.io/first.html" frameborder="0"></iframe>
+            <iframe src="views/first.html" name="show" class="over-y"></iframe>
         </section>
-        <footer>
-            FOOTER
+        <footer class="txtcenter">
+            <p>
+                StudentsWithoutLife S.A. (c) 2017 Copyright Holder All Rights Reserved.
+            </p>
         </footer>
+        <script src="js/nav.js"></script>
     </body>
 </html>

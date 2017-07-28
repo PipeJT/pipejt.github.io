@@ -1,0 +1,91 @@
+/*Common Style*/
+*{margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body{background-image: url(imgs/bkg1.jpg) !important; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; font-family: sans-serif;}
+
+/*Layout Style*/
+header{width: 20%; height: 100%; position: fixed; left: 0px; top: 0px; background: rgba(0,0,0,1); padding: 10px; z-index: 2;}
+section{width: 80%; height: 98%; position: fixed; right: 0px; top: 0px;}
+footer{width: 80%; height: 2%; position: fixed; right: 0px; bottom: 0px; background: rgba(0,0,0,.5); z-index: 2; font-size: 11px}
+
+::-webkit-scrollbar-track{ background: rgba(255,255,255,0.0); }
+::-webkit-scrollbar-track-piece{ background: rgba(255,255,255,0.0); }
+::-webkit-scrollbar{ width: 6px; height: 6px; background: rgba(255,255,255,0.2); }
+::-webkit-scrollbar-thumb{ background: rgba(128,128,255,0.6); }
+
+/*Into Layout Style*/
+body.bkg-int{background: rgba(255,255,255,0) !important;}
+/*header.into{width: 100% !important; height: 15% !important; background: rgba(0,0,0,.2)}*/
+section.into{width: 100% !important; height: 100% !important; top: 0% !important; bottom: 0px !important; background: rgba(0,0,0,0.5); padding: 10px;}
+
+/*Header Style*/
+header div.logo{padding: 20px; font-size: 24px; font-weight: 700}
+
+#menu{position: absolute; width: calc(100% - 20px); font-weight: 600}
+
+ul.navlist li.navitem{list-style: none; list-style-position: outside; border-bottom: 2px solid #ff9800; padding: 10px 0px; }
+ul.navlist li.navitem ul li{list-style: none; list-style-position: outside; border-bottom: 2px solid #ff9866; background: rgba(255,255,255,.1); width: 100%; -webkit-box-shadow: 0px 0px -3px 0px #fff;
+box-shadow: 0px 0px -3px 0px #fff;}
+
+ul li:nth-last-child(1){border: none !important;}
+
+#menu > ul > li > ul { display: none; position: absolute; width: 100%;}
+#menu > ul > li > ul > li > ul { display: none; }
+
+/*Header into style*/
+
+
+/*Elements Style*/
+iframe{margin: 0; padding: 0; border: none; outline: none; width: 100%; height: 100%;}
+a{text-decoration: none;}
+
+/*Class Style*/
+/*Background Colors*/
+.bkg-black{background: #000;}
+.bkg-white{background: #fff;}
+.bkg-red{background: #f00;}
+.bkg-green{background: #0f0;}
+.bkg-blue{background: #00f;}
+.bkg-cyan{background: #0ff;}
+.bkg-yellow{background: #ff0;}
+
+/*Text Colors*/
+.txt-black{color: #000;}
+.txt-white{color: #fff;}
+.txt-red{color: #f00;}
+.txt-green{color: #0f0;}
+.txt-blue{color: #00f;}
+.txt-cyan{color: #0ff;}
+.txt-yellow{color: #ff0;}
+
+/*Text formats*/
+.txtitalic{font-style:italic;}
+.txtcenter{text-align: center;}
+.txtright{text-align: right;}
+.txtleft{text-align: left;}
+.txtjustify{text-align: justify;}
+
+/*Overflows*/
+.over-x{overflow-x: auto;}
+.over-y{overflow-y: auto;}
+.over-all{overflow: auto;}
+
+/*Layouts*/
+.art{width: 35%; background: rgba(0,0,0,0.3); margin: 5px auto; padding: 8px; font-weight: 600;}
+
+/*Flexbox*/
+.flex{display: flex; flex-wrap: wrap; flex-direction: row}
+
+.flex-dircol{flex-direction: column;}
+
+.flex-nowrap{flex-wrap: nowrap;}
+.flex-justspcaround{justify-content: space-around;}
+.flex-justspcbet{justify-content: space-between;}
+.flex-justcenter{justify-content: center;}
+.flex-juststart{justify-content: flex-start;}
+.flex-justend{justify-content: flex-end;}
+
+.flex-aligncont{align-content: center};
+.flex-alignitem{align-items: center};
+
+.shadows{-webkit-box-shadow: 4px 0px 12px 0px #000;
+box-shadow: 4px 0px 12px 0px #000;}
