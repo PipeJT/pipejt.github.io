@@ -115,7 +115,7 @@ box-shadow: 4px 0px 12px 0px #000;}
 }
 
 
-@media screen and (max-device-width: 960px){
+@media only screen and (max-device-width: 960px){
     body{background-image: url(imgs/bkg2.jpg) !important;
     height: auto;}
 }
