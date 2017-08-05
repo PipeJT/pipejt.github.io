@@ -7,42 +7,69 @@
         <link rel="stylesheet" href="content/main.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </head>
-    <body class="">
+    <body class="tran-ease">
         <header class="txt-white shadows flex flex-justspcbet flex-dircol tran-easeout">
             <div class="logo txtcenter tran-easeout">
                 <p>EXAMPLE</p>
             </div>
         </header>
         
+        <aside class="txt-white shadows flex flex-justspcbet flex-dircol tran-easeout" id="sidePC">
+            <nav class="navigation" id="menu">
+                <ul class="navlist txtcenter">
+                    <li class="navitem">
+                        <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                        <ul class="txtcenter">
+                            <li class="navitem">
+                                <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                                <ul class="navlist txtcenter">
+                                    <li class="navitem">
+                                        <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                                    </li>
+                                    <li class="navitem">
+                                        <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
         <aside class="txt-white shadows flex flex-justspcbet flex-dircol tran-easeout" id="side">
-            <div class="navegador">
-                <nav class="navigation" id="menu">
-                    <ul class="navlist txtcenter">
-                        <li class="navitem">
-                            <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                        </li>
-                        <li class="navitem">
-                            <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                            <ul class="txtcenter">
-                                <li class="navitem">
-                                    <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                                </li>
-                                <li class="navitem">
-                                    <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                                    <ul class="navlist txtcenter">
-                                        <li class="navitem">
-                                            <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                                        </li>
-                                        <li class="navitem">
-                                            <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navigation" id="menu">
+                <ul class="navlist txtcenter">
+                    <li class="navitem">
+                        <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                        <ul class="txtcenter">
+                            <li class="navitem">
+                                <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                                <ul class="navlist txtcenter">
+                                    <li class="navitem">
+                                        <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
+                                    </li>
+                                    <li class="navitem">
+                                        <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
         
         <section class="tran-easeout">
@@ -56,7 +83,10 @@
         </footer>
         
         <div class="menu tran-easeout" id="moveBtn">
-            <a href="#" id="showSide">></a>
+            <a href="#" id="showSide">
+                <span id="asideShow" class="hide"> X </span>
+                <span id="asideClose"> > </span>
+            </a>
         </div>
         
         <script src="js/nav.js"></script>

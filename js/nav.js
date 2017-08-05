@@ -13,9 +13,13 @@ $(document).ready(function () {
         if($("#moveBtn").hasClass("activeSide")){
             $("#moveBtn").removeClass("activeSide");
             $("#side").removeClass("sideShow");
+            $("#asideClose").removeClass("hide");
+            $("#asideShow").addClass("hide");
         }else{
             $("#moveBtn").addClass("activeSide");
             $("#side").addClass("sideShow");
+            $("#asideClose").addClass("hide");
+            $("#asideShow").removeClass("hide");
         };
     });
 });
