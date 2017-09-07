@@ -1,95 +1,48 @@
 <!DOCTYPE html>
 <html>
+   <!--Cabezal de página-->
     <head>
+       <!--Etiquetas "META"-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta name="viewport" content="width=device-width" />
-        <title>Portafolio</title>
-        <link rel="stylesheet" href="content/main.css">
+        
+        <!--Titulo de página-->
+        <title>En construcción</title>
+        
+        <!--Enlaces de estilo y scripts-->
+        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Open+Sans:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="content/construct.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </head>
+    
+    
     <body class="tran-ease">
-        <header class="txt-white shadows flex flex-justspcbet flex-dircol tran-easeout">
-            <div class="logo txtcenter tran-easeout">
-                <p>EXAMPLE</p>
+        <div class="wrap bkg-transblack txt-white">
+           <div class="img">
+               <img src="content/imgs/gears.png">
+           </div>
+            <div class="message">
+                <h2 class="title">Algo sucede por aqui</h2>
+                <p>Sólo hay que ser pacientes.</p>
             </div>
-        </header>
-        
-        <aside class="txt-white shadows flex flex-justspcbet flex-dircol tran-easeout" id="sidePC">
-            <nav class="navigation" id="menu">
-                <ul class="navlist txtcenter">
-                    <li class="navitem">
-                        <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                    </li>
-                    <li class="navitem">
-                        <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                        <ul class="txtcenter">
-                            <li class="navitem">
-                                <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                                <ul class="navlist txtcenter">
-                                    <li class="navitem">
-                                        <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                                    </li>
-                                    <li class="navitem">
-                                        <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        
-        <aside class="txt-white shadows flex flex-justspcbet flex-dircol tran-easeout" id="side">
-            <nav class="navigation" id="menu">
-                <ul class="navlist txtcenter">
-                    <li class="navitem">
-                        <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                    </li>
-                    <li class="navitem">
-                        <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                        <ul class="txtcenter">
-                            <li class="navitem">
-                                <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                                <ul class="navlist txtcenter">
-                                    <li class="navitem">
-                                        <a href="views/first.html" target="show" class="navlnk txt-white">ITEM 1</a>
-                                    </li>
-                                    <li class="navitem">
-                                        <a href="views/second.html" target="show" class="navlnk txt-white">ITEM 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        
-        <section class="tran-easeout">
-            <iframe src="views/first.html" name="show" class="over-y tran-ease del"></iframe>
-        </section>
-        
-        <footer class="txtcenter tran-easeout">
-            <p>
-                StudentsWithoutLife S.A. (c) 2017 Copyright Holder All Rights Reserved.
-            </p>
-        </footer>
-        
-        <div class="menu tran-easeout" id="moveBtn">
-            <a href="#" id="showSide">
-                <span id="asideShow" class="hide"> X </span>
-                <span id="asideClose"> > </span>
-            </a>
         </div>
         
         <script src="js/nav.js"></script>
     </body>
+    <!--
+    <script>
+        $(document).ready(function(){
+
+            $(window).scroll(function(){
+                var barra = $(window).scrollTop();
+                var position = barra*0.1;
+
+                $('body').css({
+                  'background-position': '0 -' + position + 'px'
+                });
+            });
+        });
+    </script>
+    -->
 </html>
