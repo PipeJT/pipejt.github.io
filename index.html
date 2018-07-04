@@ -30,24 +30,66 @@
             <div class="message">
                 <h2 class="title">Algo sucede por aqui</h2>
                 <p>Sólo hay que ser pacientes.</p>
+               <p><a href="#" id="mainShare">Aún así, compártime</a></p>
             </div>
         </div>
         
         <script src="js/nav.js"></script>
     </body>
-    <!--
     <script>
-        $(document).ready(function(){
+         function createLinksShares(id){
+                var host = window.location.host;
+                var prot = window.location.protocol;
+                var link = prot+"//"+host+"/?a="+id;
+                
+                if(navigator.share !== undefined) {
+                    // Saving the button in the variable $buttonShare
+                    let $buttonShare = document.getElementById("#mainShare");
+                    
+                    if($buttonShare.removeEventListener()){
+                        $buttonShare.addEventListener("click");
+                    }
 
-            $(window).scroll(function(){
+                    // Event click to the button
+                    $buttonShare.addEventListener("click", function(e) {
+                        e.preventDefault();
+
+                        // Saving the URL of the link
+                        var URL = link;
+
+                        // navigator.share is a function/method that receives
+                        // an object with the following parameters:
+                        navigator.share({
+                            title: "Turbusqueda App Share",
+                            text: "Example of the use of web share api",
+                            url: URL // The url that is going to share is the url of the href
+                        })
+                        .then(() => console.log("Successful share")) // if everything goes well
+                        .catch((err) => console.log(`Error sharing ${err}`)); // if there is an error
+
+                        return false;
+                    });
+                }else{
+                    console.log("This is imposibru");
+                }
+                console.log(link);
+                $('#mainShare').attr("data-url",link);
+            };
+       
+       var numberoso=0;
+        $(document).ready(function(){
+           createLinksShares(numberoso);
+            $("#mainShare").on("click",function(ewe){
+               createLinksShares(numberoso++);
+            });
+            /*$(window).scroll(function(){
                 var barra = $(window).scrollTop();
                 var position = barra*0.1;
 
                 $('body').css({
                   'background-position': '0 -' + position + 'px'
                 });
-            });
+            });*/
         });
     </script>
-    -->
 </html>
