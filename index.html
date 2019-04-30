@@ -1,97 +1,112 @@
 <!DOCTYPE html>
 <html>
-   <!--Cabezal de página-->
-    <head>
-       <!--Etiquetas "META"-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta name="viewport" content="width=device-width" />
-       <meta property="og:url"                content="https://pipejt.github.io/" />
-        <meta property="og:type"               content="website" />
-        <meta property="og:title"              content="Mira donde voy!" />
-        <meta property="og:description"        content="Revisa donde va mi bus" />
-        <meta property="og:image"              content="https://pipejt.github.io/content/imgs/gears.png" />
-        
-        <!--Titulo de página-->
-        <title>En construcción</title>
-        
-        <!--Enlaces de estilo y scripts-->
-        
-        <link rel="stylesheet" href="content/construct.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    </head>
-    
-    
-    <body class="tran-ease">
-        <div class="wrap bkg-transblack txt-white">
-           <div class="img">
-               <img src="content/imgs/gears.png">
-           </div>
-            <div class="message">
-                <h2 class="title">Algo sucede por aqui</h2>
-                <p>Sólo hay que ser pacientes.</p>
-               <p><a href="#" id="mainShare">Aún así, compártime</a></p>
-            </div>
-        </div>
-        
-        <script src="js/nav.js"></script>
-    </body>
+<!--Cabezal de página-->
+
+<head>
+    <!--Etiquetas "META"-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:url" content="https://pipejt.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mira donde voy!" />
+    <meta property="og:description" content="Revisa donde va mi bus" />
+    <meta property="og:image" content="https://pipejt.github.io/content/imgs/gears.png" />
+
+    <!--Titulo de página-->
+    <title>En construcción</title>
+
+    <!--Enlaces de estilo y scripts-->
+
+    <link rel="stylesheet" href="content/construct.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+
+<body class="tran-ease">
+    <!-- Hotjar Tracking Code for pipejt.github.com -->
     <script>
-         function createLinksShares(id){
-                var host = window.location.host;
-                var prot = window.location.protocol;
-                var link = prot+"//"+host+"/?a="+id;
-                
-                if(navigator.share !== undefined) {
-                    // Saving the button in the variable $buttonShare
-                    let $buttonShare = document.getElementById("#mainShare");
-                    
-                    if($buttonShare.removeEventListener()){
-                        $buttonShare.addEventListener("click");
-                    }
-
-                    // Event click to the button
-                    $buttonShare.addEventListener("click", function(e) {
-                        e.preventDefault();
-
-                        // Saving the URL of the link
-                        var URL = this.href;
-
-                        // navigator.share is a function/method that receives
-                        // an object with the following parameters:
-                        navigator.share({
-                            title: "Turbusqueda App Share",
-                            text: "Example of the use of web share api",
-                            url: URL // The url that is going to share is the url of the href
-                        })
-                        .then(() => console.log("Successful share")) // if everything goes well
-                        .catch((err) => console.log(`Error sharing ${err}`)); // if there is an error
-
-                        return false;
-                    });
-                }else{
-                    console.log("This is imposibru");
-                }
-                console.log(link);
-                $('#mainShare').attr("href",link);
-            };
-       
-       var numberoso=0;
-        $(document).ready(function(){
-           createLinksShares(numberoso);
-            $(".img img").on("click",function(ewe){
-               createLinksShares(numberoso++);
-            });
-            /*$(window).scroll(function(){
-                var barra = $(window).scrollTop();
-                var position = barra*0.1;
-
-                $('body').css({
-                  'background-position': '0 -' + position + 'px'
-                });
-            });*/
-        });
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1302042, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-   <script src="https://gist.githubusercontent.com/jmhdez/6405474/raw/17bf03fa312bf2efae0224bd4cf3f956955c2d49/console.js"></script>
-   
+
+    <div class="wrap bkg-transblack txt-white">
+        <div class="img">
+            <img src="content/imgs/gears.png">
+        </div>
+        <div class="message">
+            <h2 class="title">Algo sucede por aqui</h2>
+            <p>Sólo hay que ser pacientes.</p>
+            <p><a href="#" id="mainShare">Aún así, compártime</a></p>
+        </div>
+    </div>
+
+    <script src="js/nav.js"></script>
+</body>
+<script>
+    function createLinksShares(id) {
+        var host = window.location.host;
+        var prot = window.location.protocol;
+        var link = prot + "//" + host + "/?a=" + id;
+
+        if (navigator.share !== undefined) {
+            // Saving the button in the variable $buttonShare
+            let $buttonShare = document.getElementById("#mainShare");
+
+            if ($buttonShare.removeEventListener()) {
+                $buttonShare.addEventListener("click");
+            }
+
+            // Event click to the button
+            $buttonShare.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                // Saving the URL of the link
+                var URL = this.href;
+
+                // navigator.share is a function/method that receives
+                // an object with the following parameters:
+                navigator.share({
+                    title: "Turbusqueda App Share",
+                    text: "Example of the use of web share api",
+                    url: URL // The url that is going to share is the url of the href
+                })
+                    .then(() => console.log("Successful share")) // if everything goes well
+                    .catch((err) => console.log(`Error sharing ${err}`)); // if there is an error
+
+                return false;
+            });
+        } else {
+            console.log("This is imposibru");
+        }
+        console.log(link);
+        $('#mainShare').attr("href", link);
+    };
+
+    var numberoso = 0;
+    $(document).ready(function () {
+        createLinksShares(numberoso);
+        $(".img img").on("click", function (ewe) {
+            createLinksShares(numberoso++);
+        });
+        /*$(window).scroll(function(){
+            var barra = $(window).scrollTop();
+            var position = barra*0.1;
+
+            $('body').css({
+              'background-position': '0 -' + position + 'px'
+            });
+        });*/
+    });
+</script>
+<script
+    src="https://gist.githubusercontent.com/jmhdez/6405474/raw/17bf03fa312bf2efae0224bd4cf3f956955c2d49/console.js"></script>
+
 </html>
